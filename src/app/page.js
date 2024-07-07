@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import Count from "./count";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import img1 from '../../public/next.svg';
+import img2 from '../../public/vercel.svg';
 
 export default function Home() {
   // useState hook samples 
@@ -81,6 +84,25 @@ export default function Home() {
       <p> Using Router with Navigate </p>
       <button onClick={() => navigate("NewBlog")}>New Blog</button>
 
+      <br/>
+      <br/>
+
+      <p>Sample Image for Image Optimization</p>
+
+      <p>From Local</p>
+      <Image alt="Next Logo" width={50} height={50} src={ img1 } />
+
+      <br/>
+
+      <Image alt="Vercel Logo" width={50} height={50} src={ img2 } />
+
+      <br/>
+      <p>From Internet</p>
+      <Image alt="Art" width={50} height={50} src='https://images.unsplash.com/photo-1692607519784-9e5406625d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D' />
+
+      <br/>
+
+      <Image alt="Big House" width={50} height={50} src='https://images.unsplash.com/photo-1719861032503-225fac307c59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8' />
     </main>
   );
 }

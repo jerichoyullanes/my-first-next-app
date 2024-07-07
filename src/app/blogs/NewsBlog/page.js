@@ -1,6 +1,6 @@
 const Pages = () => {
   return (
-    <div>New Blog</div>
+    <div>News Blog</div>
   )
 }
 

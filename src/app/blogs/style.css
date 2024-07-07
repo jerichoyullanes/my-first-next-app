@@ -1,0 +1,11 @@
+.layout-menu {
+    display: flex;
+    justify-content: center;
+}
+.layout-menu li {
+    margin-left: 20px;
+    list-style-type: none;
+}
+.layout-menu a {
+    text-decoration: none;
+}

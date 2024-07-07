@@ -1,9 +1,18 @@
-import React from 'react'
+"use client"
+import { useRouter } from "next/navigation"
 
-const page = () => {
+const Page = () => {
+
+  const router = useRouter();
+
   return (
-    <div>Login Page</div>
+    <>
+      <h1>Login Form</h1>
+
+      <button onClick={() => router.push("/")}>Home Page</button>
+      <button onClick={() => router.push("/blogs")}>Blogs Page</button>
+    </>
   )
 }
 
-export default page
+export default Page;

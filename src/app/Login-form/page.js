@@ -11,6 +11,7 @@ const Page = () => {
 
       <button onClick={() => router.push("/")}>Home Page</button>
       <button onClick={() => router.push("/blogs")}>Blogs Page</button>
+      <button onClick={() => router.push("/Login-form/Signup")}>Signup Page</button>
     </>
   )
 }

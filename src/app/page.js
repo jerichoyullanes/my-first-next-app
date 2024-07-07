@@ -28,6 +28,11 @@ export default function Home() {
 
   const router = useRouter();
 
+  // instead multiple routes used this:
+  const navigate = (blog) => {
+    router.push('/blogs/' + blog);
+  }
+
   return (
     <main>
 
@@ -68,6 +73,13 @@ export default function Home() {
       <p> Using Router </p>
       <button onClick={ () => router.push("/blogs")} >Go to Blogs Page</button>
       <button onClick={ () => router.push("/Login-form")}>Go to Login Page</button>
+
+      {/* instead of this... */}
+      <button onClick={() => router.push("/Login-form/Signup")}>Signup Page</button>
+      <button onClick={() => router.push("/blogs/NewBlog")}>New Blog</button>
+      {/* use navigate function: */}
+      <p> Using Router with Navigate </p>
+      <button onClick={() => navigate("NewBlog")}>New Blog</button>
 
     </main>
   );

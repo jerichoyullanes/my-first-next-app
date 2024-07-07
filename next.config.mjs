@@ -11,6 +11,26 @@ const nextConfig = {
             },
           ],
     },
+    // This is not working anymore
+    // redirects: async () => {
+    //   return [
+    //     {
+    //       source: "/Signup",
+    //       destination: "/",
+    //       permanent: false,
+    //     },
+    //   ];
+    // },
+    // so used this instead:
+    async redirects() {
+      return [
+        {
+          source: '/Signup',
+          destination: '/',
+          permanent: false,
+        },
+      ]
+    },
 };
 
 export default nextConfig;

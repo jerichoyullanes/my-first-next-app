@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 
 const Count = () => {
-
+    // useMemo and useState samples
     const [Count, setCount] = useState(20);
     const [Data, setData] = useState(20);
 

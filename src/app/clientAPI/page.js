@@ -22,7 +22,7 @@ export default function Page() {
 
     return (
         <div>
-            <h1>API</h1>
+            <h1>CLIENT API</h1>
             {
                 users.length > 0 ? (
                     users.map((item) => (

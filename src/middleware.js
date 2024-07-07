@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server"
 
-export function middleware() {
-    // console.log("middleware working");
+export function middleware(request) {
     return NextResponse.redirect(new URL("/Login-form/Signup", request.url));
 }
 

@@ -1,0 +1,11 @@
+.home-menu {
+    display: flex;
+    justify-content: center;
+}
+.home-menu li {
+    margin-left: 20px;
+    list-style-type: none;
+}
+.home-menu a {
+    text-decoration: none;
+}

@@ -1,6 +1,7 @@
 'use client'
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
+import Count from "./count";
 
 export default function Home() {
   const [user1, setUser1] = useState("Jericho1");
@@ -29,10 +30,12 @@ export default function Home() {
       <Page name="Fifth"/>
       <Page name="Sixth"/> */}
 
-      <h1>Hello my first name is {user1} {user2}</h1>
+      {/* <h1>Hello my first name is {user1} {user2}</h1> */}
       {/* <button onClick={() => color("Red") }>Click here</button> */}
-      <button onClick={() => update1() }>Click here</button>
-      <button onClick={() => update2() }>Click here</button>
+      {/* <button onClick={() => update1() }>Click here</button>
+      <button onClick={() => update2() }>Click here</button> */}
+      <Count />
+
     </main>
   );
 }

@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* instead of this... */}
       <button onClick={() => router.push("/Login-form/Signup")}>Signup Page</button>
-      <button onClick={() => router.push("/blogs/NewBlog")}>New Blog</button>
+      <button onClick={() => router.push("/blogs/NewsBlog")}>New Blog</button>
       {/* use navigate function: */}
       <p> Using Router with Navigate </p>
       <button onClick={() => navigate("NewBlog")}>New Blog</button>
